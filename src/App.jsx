@@ -5,6 +5,7 @@ import Bannar from './Component/Bannar/Bannar'
 import Navber from './Component/Navber/Navber'
 import PremiumTools from './Component/PremiumSection/PremiumTools'
 import Rating from './Component/rating/rating'
+import { toast, ToastContainer } from 'react-toastify'
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
   console.log(selectedBuyNow);
   const handleCheckout = () => {
     setselectedBuyNow([])
+    selectedBuyNow.length ===0 ? '' : toast.success('All cart Removed',{theme: "colored"})
   }
 
   return (
@@ -22,6 +24,7 @@ function App() {
     <Rating></Rating>
 
     <PremiumTools selectedBuyNow={selectedBuyNow} setselectedBuyNow={setselectedBuyNow} handleCheckout={handleCheckout}></PremiumTools>
+    <ToastContainer></ToastContainer>
     </>
   )
 }

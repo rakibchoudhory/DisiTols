@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import SelectedProducts from "./SelectedProduct/SelectedProducts";
 import SelectedCard from "./SelectedCard/SelectedCard";
+import { toast } from "react-toastify";
+
 
 const fetchToolsDatas = fetch('/ToolsData.json')
 .then(res => res.json())
@@ -14,6 +16,8 @@ const fetchToolsDatas = fetch('/ToolsData.json')
   const handleRemoveButton = (selectedTool)=>{
     const filterTools = selectedBuyNow.filter(tool => tool.id !== selectedTool.id)
     setselectedBuyNow(filterTools)
+
+   toast.success('Cart is removed',{theme: "dark"})
    
   }
 

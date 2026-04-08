@@ -1,4 +1,5 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const Card = ({ toolsData , setselectedBuyNow, selectedBuyNow }) => {
   // console.log(toolsData);
@@ -8,6 +9,7 @@ const handleSelectedTools = () => {
 
   if (!exists) {
     setselectedBuyNow([...selectedBuyNow, toolsData])
+    toast.success(`${toolsData.product_name} is selected`)
   }
  
 }
