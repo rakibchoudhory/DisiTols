@@ -2,7 +2,8 @@ import React from 'react';
 
 const Rating = () => {
     return (
-        <div className='bg-gradient-to-b from-[#4F39F6] to-[rgb(149,20,250)] '>
+        <>
+          <div className='bg-gradient-to-b from-[#4F39F6] to-[rgb(149,20,250)] '>
             
         <div className='w-11/12 mx-auto grid grid-cols-3 text-center py-8'>
 
@@ -23,6 +24,11 @@ const Rating = () => {
 
 
         </div>
+
+      
+
+        </>
+      
         
     );
 };
