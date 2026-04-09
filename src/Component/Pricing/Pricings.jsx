@@ -3,14 +3,14 @@ import React, { use } from 'react';
 import axios from 'axios';
 import Pricing from './Pricing';
 
-const pricingDataPromise = axios.get("/public/Pricing.json")
+const pricingDataPromise = axios.get("/db/Pricing.json")
 
 const Pricings = () => {
 
     const pricingData = use(pricingDataPromise);
 
     return (
-        <div className='py-10 lg:py-32 space-y-10 w-11/12 mx-auto px-5 xl:px-0' id='pricing'>
+        <div className='py-10 lg:py-32 space-y-10 w-[88%] mx-auto ' id='pricing'>
             <div className='text-center flex items-center flex-col gap-4'>
                 <h2 className='font-bold text-4xl lg:text-5xl text-base-content/85'>
                     Simple, Transparent Pricing

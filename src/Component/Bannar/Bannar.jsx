@@ -3,7 +3,7 @@ import React from "react";
 const Bannar = () => {
   return (
     
-    <div className="w-11/12 mx-auto  my-10 flex flex-col md:flex-row justify-between gap-6">
+    <div className="w-11/12 mx-auto px-4  my-10 flex flex-col md:flex-row justify-between gap-6">
         
       {/* left side */}
      <div className="flex  justify-center items-center text-center md:text-start">

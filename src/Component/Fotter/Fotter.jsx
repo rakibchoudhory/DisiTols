@@ -2,7 +2,7 @@ import React from 'react';
 
 const Fotter = () => {
     return (
-         <footer className="bg-[#0f172a] text-gray-400 p-10 lg:pt-32 font-sans">
+         <footer className="bg-[#0f172a] text-gray-400 py-10 px-19 lg:pt-32 font-sans">
             <div className="max-w-300 mx-auto">
                 <div className="footer place-items-center md:place-items-start grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-10">
                     <aside className="max-w-xs flex flex-col items-center md:items-start  text-center md:text-start">
@@ -12,6 +12,7 @@ const Fotter = () => {
                             Work smarter with our suite of powerful tools.
                         </p>
                     </aside>
+                     
                     <nav>
                         <h6 className="footer-title font-medium text-white opacity-100 normal-case text-lg mb-4">Product</h6>
                         <span className="mb-2 block cursor-default">Features</span>
@@ -19,6 +20,7 @@ const Fotter = () => {
                         <span className="mb-2 block cursor-default">Templates</span>
                         <span className="mb-2 block cursor-default">Integrations</span>
                     </nav>
+
                     <nav>
                         <h6 className="footer-title font-medium text-white opacity-100 normal-case text-lg mb-4">Company</h6>
                         <span className="mb-2 block cursor-default">About</span>
@@ -26,6 +28,7 @@ const Fotter = () => {
                         <span className="mb-2 block cursor-default">Careers</span>
                         <span className="mb-2 block cursor-default">Press</span>
                     </nav>
+
                     <nav>
                         <h6 className="footer-title font-medium text-white opacity-100 normal-case text-lg mb-4">Resources</h6>
                         <span className="mb-2 block cursor-default">Documentation</span>
@@ -33,6 +36,7 @@ const Fotter = () => {
                         <span className="mb-2 block cursor-default">Community</span>
                         <span className="mb-2 block cursor-default">Contact</span>
                     </nav>
+
                     <div className="mt-6">
                         <h6 className="footer-title font-medium text-white opacity-100 normal-case text-lg mb-4">Social Links</h6>
                         <div className="flex gap-4">

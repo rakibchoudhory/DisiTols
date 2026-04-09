@@ -4,7 +4,7 @@ import SelectedCard from "./SelectedCard/SelectedCard";
 import { toast } from "react-toastify";
 
 
-const fetchToolsDatas = fetch('/ToolsData.json')
+const fetchToolsDatas = fetch('/db/ToolsData.json')
 .then(res => res.json())
 
 

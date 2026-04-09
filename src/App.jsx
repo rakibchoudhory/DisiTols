@@ -30,8 +30,8 @@ function App() {
 
     <PremiumTools selectedBuyNow={selectedBuyNow} setselectedBuyNow={setselectedBuyNow} handleCheckout={handleCheckout}></PremiumTools>
     <Steps></Steps>
-    <Workflow></Workflow>
     <Pricings></Pricings>
+    <Workflow></Workflow>
     <Fotter></Fotter>
     <ToastContainer></ToastContainer>
     </>
