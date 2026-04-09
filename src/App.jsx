@@ -6,6 +6,11 @@ import Navber from './Component/Navber/Navber'
 import PremiumTools from './Component/PremiumSection/PremiumTools'
 import Rating from './Component/rating/rating'
 import { toast, ToastContainer } from 'react-toastify'
+import Steps from './Component/Steps/Steps'
+import Workflow from './Component/Workflow/workflow'
+import Fotter from './Component/Fotter/Fotter'
+import Pricings from './Component/Pricing/Pricings'
+
 
 
 function App() {
@@ -24,6 +29,10 @@ function App() {
     <Rating></Rating>
 
     <PremiumTools selectedBuyNow={selectedBuyNow} setselectedBuyNow={setselectedBuyNow} handleCheckout={handleCheckout}></PremiumTools>
+    <Steps></Steps>
+    <Workflow></Workflow>
+    <Pricings></Pricings>
+    <Fotter></Fotter>
     <ToastContainer></ToastContainer>
     </>
   )
